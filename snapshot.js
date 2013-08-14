@@ -44,7 +44,7 @@ function snapshotLinks( links ) {
   links.forEach(function( link ) {
     casper.thenOpen(link, function() {
       casper.echo( '\nSnapshotting ' + link, 'INFO' );
-      css.screenshot( 'body' );
+      css.screenshot( 'html' );
     });
   });
 }
